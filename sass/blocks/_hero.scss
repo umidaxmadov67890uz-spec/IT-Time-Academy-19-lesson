@@ -1,11 +1,10 @@
-.hero--bg-image{
-    background-image: url(../../images/bg-image.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 90px;
-    position: relative;
-    top: -570px;
-
+.hero--bg-image {
+  background-image: url(../../images/bg-image.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 90px;
+  position: relative;
+  top: -570px;
 }
 
 .hero {
@@ -26,15 +25,15 @@
       font-weight: bold;
     }
     &__text {
-        margin-bottom: 20px;
+      margin-bottom: 20px;
       font-weight: 300;
       font-size: $size20;
       line-height: 1.52;
       color: $color2;
     }
-    &__btn{
-        background: $color4;
-        color: $color3;
+    &__btn {
+      background: $color4;
+      color: $color3;
     }
   }
   &__right {
@@ -48,20 +47,35 @@
   }
 }
 
-@media (max-width: 1200px){
-.hero__left{
-  width: 50%;
-}
+@media (max-width: 1200px) {
+  .hero__left {
+    width: 50%;
+  }
 
-  .hero__right{
+  .hero__right {
     width: 50%;
   }
 }
-@media (max-width: 850px){
-  .hero__left{
+@media (max-width: 850px) {
+  .hero__left {
     width: 80%;
   }
-  .hero__right{
+  .hero__right {
     width: 1px;
+  }
+}
+@media (max-width: 500px) {
+  .hero__left {
+    width: 100%;
+  }
+  .hero__right{
+    height: 400px;
+  }
+  .hero__left__btn {
+    margin: 0 auto;
+  }
+  .hero__left__text,
+  .hero__left__title{
+    text-align: center;
   }
 }

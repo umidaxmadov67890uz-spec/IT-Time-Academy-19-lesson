@@ -67,3 +67,40 @@
     width: 100%;
   }
 }
+
+
+@media (max-width: 650px){
+  .download__left__line{
+    display: none;
+  }
+}
+@media (max-width: 500px){
+  .download{
+    flex-direction: column-reverse;
+    gap: 0;
+  }
+  .download__right{
+    width: 70%;
+    height: 250px;
+  }
+  .download__left{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .download__left__text{
+    margin-top: 10px;
+    text-align: center;
+  }
+  .download__left__title{
+    text-align: center;
+    line-height: 1.2;
+  }
+
+}
+@media (max-width: 400px){
+  .download{
+    margin-top: 50px;
+  }
+}

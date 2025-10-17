@@ -62,3 +62,37 @@
     width: 95%;
   }
 }
+
+@media (max-width: 650px){
+  .leading{
+    margin-top: 1150px;
+  }
+  .leading__right__line{
+    display: none;
+  }
+}
+@media (max-width: 500px){
+  .leading{
+    flex-direction: column;
+    gap: 0;
+  }
+  .leading__left{
+    width: 70%;
+    height: 250px;
+  }
+  .leading__right{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .leading__right__text{
+    margin-top: 10px;
+    text-align: center;
+  }
+  .leading__right__title{
+    text-align: center;
+    line-height: 1.2;
+  }
+
+}
