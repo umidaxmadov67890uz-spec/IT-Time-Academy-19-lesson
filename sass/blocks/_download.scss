@@ -1,3 +1,13 @@
+@mixin size($w, $h) {
+  width: $w;
+  height: $h;
+}
+@mixin center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .download {
   margin-top: 250px;
   display: flex;
@@ -5,8 +15,7 @@
   align-items: center;
   justify-content: space-between;
   &__right {
-    width: 550px;
-    height: 370px;
+    @include size (550px, 370px);
     &__image{
       width: 100%;
       object-fit: contain;
@@ -22,8 +31,7 @@
       color: $color1;
     }
     &__line {
-      width: 55px;
-      height: 2px;
+      @include size (55px, 2px);
       margin: 25px 0 30px;
       background: $color1;
     }
@@ -80,8 +88,7 @@
     gap: 0;
   }
   .download__right{
-    width: 70%;
-    height: 250px;
+    @include size(70%, 250px);
   }
   .download__left{
     width: 90%;

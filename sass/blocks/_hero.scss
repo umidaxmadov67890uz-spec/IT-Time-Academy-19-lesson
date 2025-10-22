@@ -1,3 +1,13 @@
+@mixin size($w, $h) {
+  width: $w;
+  height: $h;
+}
+@mixin center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .hero--bg-image {
   background-image: url(../../images/bg-image.png);
   background-repeat: no-repeat;
@@ -12,8 +22,7 @@
   align-items: center;
   justify-content: space-between;
   &__left {
-    width: 445px;
-    height: 335px;
+    @include size (445px, 335px);
     display: flex;
     gap: 25px;
     align-items: start;
@@ -37,11 +46,9 @@
     }
   }
   &__right {
-    width: 690px;
-    height: 590px;
+    @include size (690px, 590px);
     &__image {
-      width: 100%;
-      height: 100%;
+      @include size (100%, 100%);
       object-fit: contain;
     }
   }
